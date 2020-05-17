@@ -1,0 +1,46 @@
+{
+  "name": "next-page-transition-group",
+  "version": "0.1.0",
+  "description": "CSS page transitions for Next.js with react-transition-group",
+  "repository": "git@github.com:lauroaraujo/next-page-transition-group.git",
+  "author": "Lauro Araujo <lauro.araujo@gmail.com>",
+  "main": "lib/PageTransition.js",
+  "types": "lib/PageTransition.d.ts",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "build": "rimraf ./lib && tsc",
+    "lint": "standardx **/*.{js,ts,tsx}"
+  },
+  "eslintConfig": {
+    "rules": {
+      "no-unused-vars": "off",
+      "@typescript-eslint/no-unused-vars": "error"
+    }
+  },
+  "standardx": {
+    "parser": "@typescript-eslint/parser",
+    "plugins": [
+      "@typescript-eslint/eslint-plugin"
+    ],
+    "ignore": [
+      "lib/**"
+    ]
+  },
+  "dependencies": {
+    "next": "^9",
+    "react": "^16.8",
+    "react-dom": "^16.8",
+    "react-transition-group": "^4"
+  },
+  "devDependencies": {
+    "@types/node": "^12",
+    "@types/react": "^16.8",
+    "@types/react-transition-group": "^4",
+    "@typescript-eslint/eslint-plugin": "^2.33.0",
+    "@typescript-eslint/parser": "^2.33.0",
+    "rimraf": "^3.0.2",
+    "standardx": "^5.0.0",
+    "typescript": "^3.9.2"
+  }
+}
