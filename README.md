@@ -18,7 +18,7 @@ As of now, `next-page-transition-group` **is not production ready**, and
 `next-page-transitions` has more features.
 
 ## Roadmap
-- [] Add tests
-- [] Setup CI with github actions
-- [] Support delayed with loading animation callback.
-- [] Support all use-cases under `next-page-transitions/examples` folder.
+- [ ] Add tests
+- [ ] Setup CI with github actions
+- [ ] Support delayed with loading animation callback.
+- [ ] Support all use-cases under `next-page-transitions/examples` folder.
