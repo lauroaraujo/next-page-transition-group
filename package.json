@@ -5,13 +5,17 @@
   "repository": "git@github.com:lauroaraujo/next-page-transition-group.git",
   "author": "Lauro Araujo <lauro.araujo@gmail.com>",
   "main": "lib/PageTransition.js",
+  "module": "lib/PageTransition.es.js",
   "types": "lib/PageTransition.d.ts",
   "license": "MIT",
   "private": false,
   "scripts": {
-    "build": "rimraf ./lib && tsc",
+    "build": "rimraf ./lib && rollup -c",
     "lint": "standardx **/*.{js,ts,tsx}"
   },
+  "files": [
+    "lib"
+  ],
   "eslintConfig": {
     "rules": {
       "no-unused-vars": "off",
@@ -27,7 +31,7 @@
       "lib/**"
     ]
   },
-  "dependencies": {
+  "peerDependencies": {
     "next": "^9",
     "react": "^16.8",
     "react-dom": "^16.8",
@@ -39,7 +43,16 @@
     "@types/react-transition-group": "^4",
     "@typescript-eslint/eslint-plugin": "^2.33.0",
     "@typescript-eslint/parser": "^2.33.0",
+    "next": "^9",
+    "react": "^16.8",
+    "react-dom": "^16.8",
+    "react-transition-group": "^4",
     "rimraf": "^3.0.2",
+    "rollup": "^2.10.2",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-peer-deps-external": "^2.2.2",
+    "rollup-plugin-typescript2": "^0.27.1",
     "standardx": "^5.0.0",
     "typescript": "^3.9.2"
   }

@@ -1,8 +1,6 @@
 {
   "compilerOptions": {
     "baseUrl": "./",
-    "outDir": "./lib",
-    "target": "es5",
     "lib": [
       "dom",
       "dom.iterable",
@@ -13,10 +11,11 @@
     "strict": true,
     "forceConsistentCasingInFileNames": true,
     "esModuleInterop": true,
-    "module": "ES6",
+    "module": "esnext",
     "moduleResolution": "node",
-    "jsx": "preserve",
-    "declaration": true
+    "jsx": "react",
+    "declaration": true,
+    "sourceMap": true
   },
   "exclude": [
     "node_modules"
